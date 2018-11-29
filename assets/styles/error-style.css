@@ -1,0 +1,24 @@
+@font-face {
+	font-family: "Mont DEMO";
+	src: url("Mont-HeavyDEMO.otf") format("opentype");
+	font-weight: bold;
+}
+body {
+	height: 40em;
+	background-color: #B2DFE1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#header {
+	font-family: "Mont DEMO";
+	font-size: 2em;
+	color: #F38971;
+	margin-bottom: 0;
+}
+#body {
+	font-family: "Quicksand";
+	font-size: 1.5em;
+	color: white;
+}
