@@ -63,13 +63,13 @@
 	font-size: 1em;
   cursor: pointer;
 }
-/* #pages-about {
+#pages-work {
   background: url("../images/pink-circle.svg") no-repeat center;
   background-size: 3.8em;
 }
-#pages-about:hover {
+#pages-work:hover {
   color: white;
-} */
+}
 .page:hover {
   transition-duration: 0.3s;
   color: #F9C4B8;
@@ -86,25 +86,47 @@ a {
   text-decoration: none;
   color: inherit;
 }
-#error {
-	height: 28em;
-	background-color: #B2DFE1;
-	display: flex;
-  padding-top: 5em;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+#azlyrics > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B2DFE1;
 }
-#header {
-	font-family: "Mont DEMO";
-	font-size: 2em;
-	color: #F38971;
-	margin-bottom: 0;
+#azlyrics > .container > #content {
+  padding: 10em 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  background-color: white;
 }
-#body {
-	font-family: "Quicksand";
-	font-size: 1.5em;
-	color: white;
+.title {
+  font-family: "Mont DEMO";
+}
+#header .title {
+  font-size: 3em;
+  line-height: 0.1em;
+}
+#header .title > #colored {
+  color: #FFDB55;
+}
+#header .category, .time {
+  line-height: 1em;
+  letter-spacing: 0.05em;
+}
+.category {
+  font-style: italic;
+}
+.desc {
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+#my-role .container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 /*Footer*/
 #footer {

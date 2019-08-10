@@ -13,10 +13,26 @@
   from { opacity: 0; }
   to   { opacity: 1; }
 }
+@keyframes fadeout {
+  0 { opacity: 1; }
+  100% { opacity: 0.5; }
+}
 @keyframes rotate {
   0% { transform: rotate(0deg); }
   50% { transform: rotate(20deg); }
   100% { transform: rotate(0deg); }
+}
+/*Body*/
+body {
+  margin: 0;
+  animation: fadein 2s;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 /*Navigation Bar*/
 #nav-bar > .container {
@@ -63,13 +79,13 @@
 	font-size: 1em;
   cursor: pointer;
 }
-/* #pages-about {
+#pages-work {
   background: url("../images/pink-circle.svg") no-repeat center;
   background-size: 3.8em;
 }
-#pages-about:hover {
+#pages-work:hover {
   color: white;
-} */
+}
 .page:hover {
   transition-duration: 0.3s;
   color: #F9C4B8;
@@ -86,25 +102,87 @@ a {
   text-decoration: none;
   color: inherit;
 }
-#error {
-	height: 28em;
-	background-color: #B2DFE1;
-	display: flex;
-  padding-top: 5em;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+img {
+  max-width: 40em;
+  height: auto;
 }
-#header {
-	font-family: "Mont DEMO";
-	font-size: 2em;
-	color: #F38971;
-	margin-bottom: 0;
+section {
+  padding-top: 2em;
 }
-#body {
-	font-family: "Quicksand";
-	font-size: 1.5em;
-	color: white;
+section.not(#header):hover {
+  border-bottom: 0.01em solid black;
+}
+#footer, #mochi {
+  padding-bottom: initial;
+  margin: initial;
+  border: initial;
+}
+#fastercon-c {
+  color: #2DBAA8;
+}
+#pasae-c {
+  color: #E7A22F;
+}
+#azl-c {
+  color: #51D8D1;
+}
+#tmc-c {
+  color: #74130B;
+}
+#mochi-c {
+  color: #005E39;
+}
+#work > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B2DFE1;
+}
+#work > .container > #content {
+  padding: 10em 2em 4em 2em;
+  background-color: white;
+}
+.title {
+  font-family: "Mont DEMO";
+  font-size: 2.5em;
+  line-height: 0.1em;
+}
+.title:hover, img:hover{
+  animation: fadeout 0.5s;
+  animation-fill-mode: forwards;
+}
+#header .title {
+  all: initial;
+}
+#header .title {
+  font-family: "Mont DEMO";
+  font-size: 6em;
+  line-height: 0.1em;
+  color: #F38971;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+.title, .desc, .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.category {
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+.desc {
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  max-width: 36em;
 }
 /*Footer*/
 #footer {

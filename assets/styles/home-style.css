@@ -293,10 +293,10 @@ a {
 .skill:hover {
   border-color: #F38971;
 }
-.skill:hover .skill-title{
+.skill:hover .skill-title {
   background-color: #F38971;
 }
-.skill:hover .skill-body{
+.skill:hover .skill-body {
   color: black;
 }
 .skill:hover .skill-footer {
